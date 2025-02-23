@@ -75,21 +75,19 @@ body {
     text-align: center;
 }
 .all-cards {
-    position: relative;
-    height: 130px;
-    width: 130px;
 }
-.circular-card {
+
+.category-card {
     height: 130px;
     width: 130px;
     border-radius: 50%;
     opacity: 0.8;
 }
 
-.circular-card img {
+.category-card img {
     max-width: 60%;
 }
-.circular-card-title {
+.category-card-title {
     color: #555550;
     font-family: Almarai;
     font-size: 18px;
