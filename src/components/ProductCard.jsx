@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
 import product from '../assets/images/product.png';
-import favImg from '../assets/images/fav-off.png';
+import favOffImg from '../assets/images/fav-off.png';
 import rate from '../assets/images/rate.png';
 
 const ProductCard = () => {
@@ -25,7 +25,7 @@ const ProductCard = () => {
                 />
                 <div className="d-flex justify-content-end mx-2">
                     <img
-                        src={favImg}
+                        src={favOffImg}
                         alt=""
                         className="text-center"
                         style={{
