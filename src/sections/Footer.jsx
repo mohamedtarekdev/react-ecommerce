@@ -29,7 +29,7 @@ const Footer = () => {
                                 alt="phone"
                             />
                         </div>
-                        <div style={{ cursor: 'pointer' }}>
+                        <div className="footer-social">
                             <img
                                 src={facebook}
                                 width="20px"
@@ -37,7 +37,7 @@ const Footer = () => {
                                 alt="facebook"
                             />
                         </div>
-                        <div style={{ cursor: 'pointer' }}>
+                        <div className="footer-social">
                             <img
                                 src={instagram}
                                 width="20px"
@@ -45,7 +45,7 @@ const Footer = () => {
                                 alt="instagram"
                             />
                         </div>
-                        <div style={{ cursor: 'pointer' }}>
+                        <div className="footer-social">
                             <img
                                 src={twitter}
                                 width="20px"

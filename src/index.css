@@ -25,7 +25,7 @@ body {
 }
 .nav-text {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 12px !important;
     font-weight: bold;
 }
 .section-title {
@@ -192,6 +192,10 @@ body {
     cursor: pointer;
     direction: ltr;
     margin: 0;
+}
+
+.footer-social {
+    cursor: pointer;
 }
 /* end footer */
 
