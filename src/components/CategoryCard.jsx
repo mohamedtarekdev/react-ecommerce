@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 
-const CircularCard = ({ title, image, background }) => {
+const CircularCard = ({ title, categoryImage, background }) => {
     return (
         <Col
             xs={6}
@@ -15,7 +15,7 @@ const CircularCard = ({ title, image, background }) => {
                     className="category-card d-flex justify-content-center align-items-center"
                     style={{ backgroundColor: background }}
                 >
-                    <img src={image} alt="..." />
+                    <img src={categoryImage} alt="..." />
                 </div>
                 <div className="category-card-title my-2">{title}</div>
             </div>

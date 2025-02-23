@@ -1,11 +1,10 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
-import product from '../assets/images/product.png';
 import favOffImg from '../assets/images/fav-off.png';
 import rate from '../assets/images/rate.png';
 
-const ProductCard = () => {
+const ProductCard = ({ productImage }) => {
     return (
         <Col xs="6" sm="6" md="4" lg="3" className="my-4 d-flex">
             <Card
@@ -21,7 +20,7 @@ const ProductCard = () => {
             >
                 <Card.Img
                     style={{ height: '228px', width: '100%' }}
-                    src={product}
+                    src={productImage}
                 />
                 <div className="d-flex justify-content-end mx-2">
                     <img

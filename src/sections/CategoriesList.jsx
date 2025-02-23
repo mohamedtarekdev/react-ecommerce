@@ -17,32 +17,32 @@ const CategoriesList = ({ title, btnValue }) => {
             <Row>
                 <CategoryCard
                     title="اجهرة منزلية"
-                    image={clothes}
+                    categoryImage={clothes}
                     background="#D6FDD9"
                 />
                 <CategoryCard
                     title="مستحضرات تجميل"
-                    image={makeup}
+                    categoryImage={makeup}
                     background="#FFCCCC"
                 />
                 <CategoryCard
                     title="ادوات منزلية"
-                    image={pan}
+                    categoryImage={pan}
                     background="#FDEDD7"
                 />
                 <CategoryCard
                     title="اجهرة منزلية"
-                    image={washing_machine}
+                    categoryImage={washing_machine}
                     background="#D6FDFF"
                 />
                 <CategoryCard
                     title="اجهرة الكترونية"
-                    image={laptop}
+                    categoryImage={laptop}
                     background="#D6E6FD"
                 />
                 <CategoryCard
                     title="تخفيضات"
-                    image={sale}
+                    categoryImage={sale}
                     background="#FBD6D6"
                 />
             </Row>
