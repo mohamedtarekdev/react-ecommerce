@@ -12,12 +12,12 @@ const CircularCard = ({ title, image, background }) => {
         >
             <div className="all-cards">
                 <div
-                    className="circular-card d-flex justify-content-center align-items-center"
+                    className="category-card d-flex justify-content-center align-items-center"
                     style={{ backgroundColor: background }}
                 >
                     <img src={image} alt="..." />
                 </div>
-                <div className="circular-card-title my-2">{title}</div>
+                <div className="category-card-title my-2">{title}</div>
             </div>
         </Col>
     );
