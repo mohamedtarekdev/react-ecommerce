@@ -10,7 +10,7 @@ const CircularCard = ({ title, categoryImage, background }) => {
             lg={2}
             className="my-4 d-flex justify-content-around"
         >
-            <div className="all-cards">
+            <div className="all-cards d-flex flex-column align-items-center">
                 <div
                     className="category-card d-flex justify-content-center align-items-center"
                     style={{ backgroundColor: background }}
