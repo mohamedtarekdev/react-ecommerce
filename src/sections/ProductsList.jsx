@@ -12,8 +12,6 @@ const ProductsList = ({ title, btnValue }) => {
                 <ProductCard />
                 <ProductCard />
                 <ProductCard />
-                <ProductCard />
-                <ProductCard />
             </Row>
         </Container>
     );
