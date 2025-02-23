@@ -10,7 +10,7 @@ import washing_machine from '../assets/images/washing-machine.png';
 import laptop from '../assets/images/laptop.png';
 import sale from '../assets/images/sale.png';
 
-const Categories = ({ title, btnValue }) => {
+const CategoriesList = ({ title, btnValue }) => {
     return (
         <Container>
             <SectionTitle title={title} btnValue={btnValue} />
@@ -50,4 +50,4 @@ const Categories = ({ title, btnValue }) => {
     );
 };
 
-export default Categories;
+export default CategoriesList;
