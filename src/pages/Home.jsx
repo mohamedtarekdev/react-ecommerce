@@ -5,6 +5,7 @@ import CategoriesList from '../sections/CategoriesList';
 import ProductsList from '../sections/ProductsList';
 import Ad from '../components/Ad';
 import BrandsList from '../sections/BrandsList';
+import Footer from '../sections/Footer';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Ad />
             <ProductsList title="أحدث الأزياء" btnValue="المزيد" />
             <BrandsList title="أشهر الماركات" btnValue="المزيد" />
+            <Footer />
         </div>
     );
 };
