@@ -365,14 +365,14 @@ body {
 
 /* login and register style */
 
-.user-input {
+.login input {
     box-sizing: border-box;
     height: 38px;
     width: 374px;
     border: 1px solid #979797;
     border-radius: 8px;
 }
-.title-login {
+.login .title {
     color: #555550;
     font-family: Almarai;
     font-size: 20px;
@@ -381,7 +381,7 @@ body {
     line-height: 28px;
     text-align: right;
 }
-.btn-login {
+.login button {
     height: 46px;
     width: 374px;
     border-radius: 10px;
@@ -389,8 +389,13 @@ body {
     color: white;
     background-color: #272727;
 }
-.btn-login:hover {
+.login button:hover {
     color: rgb(206, 204, 204);
+}
+
+.login a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* end login and register */
