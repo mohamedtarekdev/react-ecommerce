@@ -363,16 +363,16 @@ body {
 
 /* end categoery header */
 
-/* login and register style */
+/* auth style */
 
-.login input {
+.auth input {
     box-sizing: border-box;
     height: 38px;
     width: 374px;
     border: 1px solid #979797;
     border-radius: 8px;
 }
-.login .title {
+.auth .title {
     color: #555550;
     font-family: Almarai;
     font-size: 20px;
@@ -381,7 +381,7 @@ body {
     line-height: 28px;
     text-align: right;
 }
-.login button {
+.auth button {
     height: 46px;
     width: 374px;
     border-radius: 10px;
@@ -389,16 +389,16 @@ body {
     color: white;
     background-color: #272727;
 }
-.login button:hover {
+.auth button:hover {
     color: rgb(206, 204, 204);
 }
 
-.login a {
+.auth a {
     text-decoration: none;
     color: inherit;
 }
 
-/* end login and register */
+/* end auth */
 
 /* cart page */
 .cart-title {
