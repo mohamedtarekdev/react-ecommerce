@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar, FormControl } from 'react-bootstrap';
+import { Link } from 'react-router';
 
 import logo from '../assets/images/logo.png';
 import login from '../assets/images/login.png';
@@ -23,7 +24,7 @@ function MainNavbar() {
                     />
                     <Nav className="me-auto">
                         <Nav.Link
-                            href="#"
+                            href="/login"
                             className="nav-text d-flex mt-3 justify-content-center"
                         >
                             <img
@@ -35,7 +36,7 @@ function MainNavbar() {
                         </Nav.Link>
 
                         <Nav.Link
-                            href="#"
+                            href="/cart"
                             className="nav-text position-relative d-flex mt-3 justify-content-center"
                             style={{ color: 'white' }}
                         >
