@@ -10,9 +10,9 @@ function MainNavbar() {
         <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
             <Container>
                 <Navbar.Brand>
-                    <a href="/">
+                    <Link to={'/'}>
                         <img src={logo} className="logo" />
-                    </a>
+                    </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
