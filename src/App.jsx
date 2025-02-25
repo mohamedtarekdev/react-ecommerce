@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 import Home from './pages/Home';
 import Footer from './sections/Footer';
 import MainNavbar from './components/MainNavbar';
-import Login from './pages/Login';
-import Register from './pages/Register';
+import Login from './pages/Auth/Login';
+import Register from './pages/Auth/Register';
 
 function App() {
     return (
