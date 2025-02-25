@@ -7,10 +7,10 @@ import brand1 from '../assets/images/brand1.png';
 import brand2 from '../assets/images/brand2.png';
 import brand3 from '../assets/images/brand3.png';
 
-const BrandsList = ({ title, btnValue }) => {
+const BrandsList = ({ title, btnValue, path }) => {
     return (
         <Container>
-            <SectionTitle title={title} btnValue={btnValue} />
+            <SectionTitle title={title} btnValue={btnValue} path={path} />
             <Row>
                 <BrandCard brandImage={brand1} />
                 <BrandCard brandImage={brand2} />
