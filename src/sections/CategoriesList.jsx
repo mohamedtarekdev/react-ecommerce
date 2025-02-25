@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import SectionTitle from '../components/SectionTitle';
-import CircularCard from '../components/CircularCard';
+import CategoryCard from '../components/CategoryCard';
 
 import clothes from '../assets/images/clothes.png';
 import makeup from '../assets/images/makeup.png';
@@ -10,39 +10,39 @@ import washing_machine from '../assets/images/washing-machine.png';
 import laptop from '../assets/images/laptop.png';
 import sale from '../assets/images/sale.png';
 
-const Categories = () => {
+const CategoriesList = ({ title, btnValue, path }) => {
     return (
         <Container>
-            <SectionTitle title="التصنيفات" btnValue="المزيد" />
+            <SectionTitle title={title} btnValue={btnValue} path={path} />
             <Row>
-                <CircularCard
+                <CategoryCard
                     title="اجهرة منزلية"
-                    image={clothes}
+                    categoryImage={clothes}
                     background="#D6FDD9"
                 />
-                <CircularCard
+                <CategoryCard
                     title="مستحضرات تجميل"
-                    image={makeup}
+                    categoryImage={makeup}
                     background="#FFCCCC"
                 />
-                <CircularCard
+                <CategoryCard
                     title="ادوات منزلية"
-                    image={pan}
+                    categoryImage={pan}
                     background="#FDEDD7"
                 />
-                <CircularCard
+                <CategoryCard
                     title="اجهرة منزلية"
-                    image={washing_machine}
+                    categoryImage={washing_machine}
                     background="#D6FDFF"
                 />
-                <CircularCard
+                <CategoryCard
                     title="اجهرة الكترونية"
-                    image={laptop}
+                    categoryImage={laptop}
                     background="#D6E6FD"
                 />
-                <CircularCard
+                <CategoryCard
                     title="تخفيضات"
-                    image={sale}
+                    categoryImage={sale}
                     background="#FBD6D6"
                 />
             </Row>
@@ -50,4 +50,4 @@ const Categories = () => {
     );
 };
 
-export default Categories;
+export default CategoriesList;

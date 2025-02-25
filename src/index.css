@@ -25,7 +25,7 @@ body {
 }
 .nav-text {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 12px !important;
     font-weight: bold;
 }
 .section-title {
@@ -75,21 +75,19 @@ body {
     text-align: center;
 }
 .all-cards {
-    position: relative;
-    height: 130px;
-    width: 130px;
 }
-.circular-card {
+
+.category-card {
     height: 130px;
     width: 130px;
     border-radius: 50%;
     opacity: 0.8;
 }
 
-.circular-card img {
+.category-card img {
     max-width: 60%;
 }
-.circular-card-title {
+.category-card-title {
     color: #555550;
     font-family: Almarai;
     font-size: 18px;
@@ -151,49 +149,52 @@ body {
 }
 
 /* discount setion */
-.discount-backcolor {
+.ad {
     height: 130px;
     border-radius: 8px;
     background: radial-gradient(circle, #767676 0%, #4d4f50 100%, #494c4d 100%);
 }
-.discount-title {
+.ad span {
     color: #ffffff;
-    font-family: Cairo;
-    font-size: 21px;
+    font-family: Almarai;
+    font-size: 20px;
     font-weight: bold;
-    letter-spacing: 0;
-    line-height: 39px;
 }
-.dicount-img {
+.ad img {
     max-height: 130px;
     max-width: 80%;
 }
 /* end discount */
 
-/* foter */
-.footer-background {
-    background-color: #ffffff;
-}
+/* footer */
 
 .footer {
     width: 100%;
+    background-color: #ffffff;
 }
-.footer-shroot {
+
+.footer-data {
     color: #979797;
     font-family: Almarai;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 18px;
     cursor: pointer;
 }
 
-.footer-phone {
+.footer p {
     color: #979797;
     font-family: 'Almarai';
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     text-align: right;
+    cursor: pointer;
+    direction: ltr;
+    margin: 0;
+}
+
+.footer-social {
     cursor: pointer;
 }
 /* end footer */
@@ -362,37 +363,42 @@ body {
 
 /* end categoery header */
 
-/* login and register style */
+/* auth style */
 
-.user-input {
+.auth input {
     box-sizing: border-box;
-    height: 37px;
-    width: 375px;
+    height: 38px;
+    width: 374px;
     border: 1px solid #979797;
     border-radius: 8px;
 }
-.title-login {
+.auth .title {
     color: #555550;
     font-family: Almarai;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 800;
     letter-spacing: 0;
     line-height: 28px;
     text-align: right;
 }
-.btn-login {
+.auth button {
     height: 46px;
     width: 374px;
-    border-radius: 9px;
+    border-radius: 10px;
     border: none;
     color: white;
     background-color: #272727;
 }
-.btn-login:hover {
+.auth button:hover {
     color: rgb(206, 204, 204);
 }
 
-/* end login and register */
+.auth a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* end auth */
 
 /* cart page */
 .cart-title {
@@ -471,7 +477,7 @@ body {
     color: white;
     font-size: 14px;
 }
-.admin-content-text {
+.page .title {
     color: #555550;
     font-family: Almarai;
     font-size: 21px;
