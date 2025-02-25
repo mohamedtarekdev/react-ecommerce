@@ -9,7 +9,11 @@ const Home = () => {
     return (
         <div>
             <Slider />
-            <CategoriesList title="التصنيفات" btnValue="المزيد" />
+            <CategoriesList
+                title="التصنيفات"
+                btnValue="المزيد"
+                path="/all-categories"
+            />
             <ProductsList title="الأكثر مبيعًا" btnValue="المزيد" />
             <Ad />
             <ProductsList title="أحدث الأزياء" btnValue="المزيد" />
