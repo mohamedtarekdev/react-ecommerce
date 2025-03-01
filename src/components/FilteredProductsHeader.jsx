@@ -8,7 +8,7 @@ const FilteredProductsHeader = ({ title }) => {
     return (
         <div className="filtered-products-header d-flex justify-content-between pt-3 px-2">
             <div className="text">{title}</div>
-            <div className="text d-flex ">
+            <div className="text d-flex">
                 <UnopDropdown
                     onAppear={handler}
                     onDisappearStart={handler}
@@ -25,25 +25,17 @@ const FilteredProductsHeader = ({ title }) => {
                         </button>
                     }
                     delay={0}
-                    align="CENTER"
+                    align="center"
                     hover
                 >
-                    <div className="card-filter">
-                        <div className="border-bottom card-filter-item">
-                            بدون ترتيب
-                        </div>
-                        <div className="border-bottom card-filter-item">
-                            الاكثر مبيعا
-                        </div>
-                        <div className="border-bottom card-filter-item">
-                            الاعلي تقييما
-                        </div>
-                        <div className="border-bottom card-filter-item">
+                    <div className="filter">
+                        <div className="border-bottom item">بدون ترتيب</div>
+                        <div className="border-bottom item">الاكثر مبيعا</div>
+                        <div className="border-bottom item">الاعلي تقييما</div>
+                        <div className="border-bottom item">
                             السعر من الاقل للاعلي
                         </div>
-                        <div className=" card-filter-item">
-                            السعر من الاعلي للاقل
-                        </div>
+                        <div className="item">السعر من الاعلي للاقل</div>
                     </div>
                 </UnopDropdown>
             </div>
