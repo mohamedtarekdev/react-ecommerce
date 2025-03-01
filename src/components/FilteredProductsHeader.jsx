@@ -6,7 +6,7 @@ import sort from '../assets/images/sort.png';
 const FilteredProductsHeader = ({ title }) => {
     const handler = () => {};
     return (
-        <div className="filtered-products-header d-flex justify-content-between pt-3 px-2">
+        <div className="filtered-products-header d-flex justify-content-between pt-3">
             <div className="text">{title}</div>
             <div className="text d-flex">
                 <UnopDropdown

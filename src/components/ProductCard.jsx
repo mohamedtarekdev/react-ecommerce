@@ -8,7 +8,6 @@ const ProductCard = ({ productImage }) => {
     return (
         <Col xs="6" sm="6" md="4" lg="3" className="my-4 d-flex">
             <Card
-                className="my-2"
                 style={{
                     width: '100%',
                     height: '345px',
