@@ -24,7 +24,8 @@ function MainNavbar() {
                     />
                     <Nav className="me-auto">
                         <Nav.Link
-                            href="/login"
+                            as={Link}
+                            to={'/login'}
                             className="nav-text d-flex mt-3 justify-content-center"
                         >
                             <img
@@ -36,7 +37,8 @@ function MainNavbar() {
                         </Nav.Link>
 
                         <Nav.Link
-                            href="/cart"
+                            as={Link}
+                            to={'/cart'}
                             className="nav-text position-relative d-flex mt-3 justify-content-center"
                             style={{ color: 'white' }}
                         >
