@@ -6,6 +6,7 @@ import mobile2 from '../assets/images/mobile2.png';
 import mobile3 from '../assets/images/mobile3.png';
 import { Col, Container, Row } from 'react-bootstrap';
 import ProductGallery from '../components/ProductGallery';
+import ProductDescription from '../components/ProductDescription';
 
 const ProductDetails = () => {
     const images = [
@@ -27,7 +28,9 @@ const ProductDetails = () => {
                     <Col lg={4}>
                         <ProductGallery images={images} />
                     </Col>
-                    <Col lg={8}></Col>
+                    <Col lg={8}>
+                        <ProductDescription />
+                    </Col>
                 </Row>
             </Container>
         </div>
