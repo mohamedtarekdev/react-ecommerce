@@ -228,7 +228,7 @@ body {
 /* end card filter */
 
 /* products details page */
-.product-gallary-card {
+.gallary-card {
     height: 470px !important;
     width: 370px;
     border-radius: 29px;

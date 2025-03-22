@@ -3,6 +3,7 @@ import { Card, Col } from 'react-bootstrap';
 
 import favOffImg from '../assets/images/fav-off.png';
 import rate from '../assets/images/rate.png';
+import { Link } from 'react-router';
 
 const ProductCard = ({ productImage }) => {
     return (
@@ -17,10 +18,12 @@ const ProductCard = ({ productImage }) => {
                     boxShadow: '0 2px 2px 0 rgba(151,151,151,0.5)',
                 }}
             >
-                <Card.Img
-                    style={{ height: '228px', width: '100%' }}
-                    src={productImage}
-                />
+                <Link to={`/product/:id`}>
+                    <Card.Img
+                        style={{ height: '228px', width: '100%' }}
+                        src={productImage}
+                    />
+                </Link>
                 <div className="d-flex justify-content-end mx-2">
                     <img
                         src={favOffImg}
@@ -34,9 +37,14 @@ const ProductCard = ({ productImage }) => {
                     />
                 </div>
                 <Card.Body>
-                    <Card.Title>
-                        <div className="card-title">منتج</div>
-                    </Card.Title>
+                    <Link
+                        to={`/product/:id`}
+                        style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                        <Card.Title>
+                            <div className="card-title">منتج</div>
+                        </Card.Title>
+                    </Link>
                     <Card.Text>
                         <span className="d-flex justify-content-between">
                             <span className="d-flex">

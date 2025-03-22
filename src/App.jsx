@@ -8,6 +8,7 @@ import Register from './pages/Auth/Register';
 import AllCategories from './pages/AllCategories';
 import AllBrands from './pages/AllBrands';
 import FilteredProducts from './pages/FilteredProducts';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                         path="/filtered-products"
                         element={<FilteredProducts />}
                     />
+                    <Route path="/product/:id" element={<ProductDetails />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
