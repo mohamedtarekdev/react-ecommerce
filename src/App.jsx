@@ -9,6 +9,7 @@ import AllCategories from './pages/AllCategories';
 import AllBrands from './pages/AllBrands';
 import FilteredProducts from './pages/FilteredProducts';
 import ProductDetails from './pages/ProductDetails';
+import Cart from './pages/Cart';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                         element={<FilteredProducts />}
                     />
                     <Route path="/product/:id" element={<ProductDetails />} />
+                    <Route path="/cart" element={<Cart />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

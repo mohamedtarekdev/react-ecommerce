@@ -288,7 +288,6 @@ body {
     text-align: right;
 }
 .product-price {
-    height: 46px;
     width: 150px;
     text-align: center;
     padding-top: 10px;
@@ -399,17 +398,7 @@ body {
 /* end auth */
 
 /* cart page */
-.cart-title {
-    color: #555550;
-    font-family: Almarai;
-    font-size: 21px;
-    font-weight: 800;
-    letter-spacing: 0;
-    line-height: 28px;
-    text-align: right;
-}
-.cart-item-body {
-    height: 229px;
+.cart {
     width: 100%;
     border-radius: 20px;
     background-color: #ffffff;
@@ -417,7 +406,7 @@ body {
 .copon-input {
     box-sizing: border-box;
     height: 46px;
-    width: 90%;
+    width: 100%;
     border: 1px solid #979797;
     font-family: 'Almarai';
     font-size: 12px;
@@ -438,13 +427,6 @@ body {
     font-family: 'Almarai';
     font-size: 12px;
     font-weight: normal;
-}
-
-.cart-checkout {
-    height: 250px;
-    width: 100%;
-    border-radius: 20px;
-    background-color: #ffffff;
 }
 
 /* cart end */
