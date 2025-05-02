@@ -10,6 +10,7 @@ import AllBrands from './pages/AllBrands';
 import FilteredProducts from './pages/FilteredProducts';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 function App() {
     return (
@@ -28,6 +29,10 @@ function App() {
                     />
                     <Route path="/product/:id" element={<ProductDetails />} />
                     <Route path="/cart" element={<Cart />} />
+                    <Route
+                        path="/order/payment-methoud"
+                        element={<Checkout />}
+                    />
                 </Routes>
                 <Footer />
             </BrowserRouter>

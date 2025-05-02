@@ -18,7 +18,7 @@ const CartCheckout = () => {
                         34,000 جنية
                     </div>
                     <Link
-                        to="/order/paymethoud"
+                        to="/order/payment-methoud"
                         style={{ textDecoration: 'none' }}
                         className="product-cart-add d-inline"
                     >
