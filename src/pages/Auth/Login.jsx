@@ -30,9 +30,9 @@ const Login = () => {
                     </a>
                 </Col>
             </Row>
-            <Link to="/admin/all-products" style={{ textDecoration: 'none' }}>
+            <Link to="/admin/products" style={{ textDecoration: 'none' }}>
                 <span style={{ cursor: 'pointer' }} className="text-primary">
-                    الدخول ادمن
+                    الدخول كأدمن
                 </span>
             </Link>
         </Container>
