@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import Home from './pages/Home';
-import Footer from './sections/Footer';
-import MainNavbar from './components/MainNavbar';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import Categories from './pages/Categories';
@@ -13,6 +11,9 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 
 import AdminProducts from './pages/Admin/Products';
+import AdminCategories from './pages/Admin/Categories';
+import AdminBrands from './pages/Admin/Brands';
+
 import UserLayout from './layouts/UserLayout';
 import AdminLayout from './layouts/AdminLayout';
 
@@ -46,6 +47,11 @@ function App() {
                             path="/admin/products"
                             element={<AdminProducts />}
                         />
+                        <Route
+                            path="/admin/categories"
+                            element={<AdminCategories />}
+                        />
+                        <Route path="/admin/brands" element={<AdminBrands />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
