@@ -5,8 +5,8 @@ import Footer from './sections/Footer';
 import MainNavbar from './components/MainNavbar';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
-import AllCategories from './pages/AllCategories';
-import AllBrands from './pages/AllBrands';
+import Categories from './pages/Categories';
+import Brands from './pages/Brands';
 import FilteredProducts from './pages/FilteredProducts';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './pages/Cart';
@@ -21,8 +21,8 @@ function App() {
                     <Route index element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="/all-categories" element={<AllCategories />} />
-                    <Route path="/all-brands" element={<AllBrands />} />
+                    <Route path="/categories" element={<Categories />} />
+                    <Route path="/brands" element={<Brands />} />
                     <Route
                         path="/filtered-products"
                         element={<FilteredProducts />}
