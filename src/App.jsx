@@ -10,6 +10,8 @@ import ProductDetails from './pages/ProductDetails';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 
+import AdminOrders from './pages/Admin/Orders';
+import AdminOrderDetails from './pages/Admin/OrderDetails';
 import AdminProducts from './pages/Admin/Products';
 import AdminCategories from './pages/Admin/Categories';
 import AdminBrands from './pages/Admin/Brands';
@@ -43,6 +45,11 @@ function App() {
                         />
                     </Route>
                     <Route element={<AdminLayout />}>
+                        <Route path="/admin/orders" element={<AdminOrders />} />
+                        <Route
+                            path="/admin/orders/:id"
+                            element={<AdminOrderDetails />}
+                        />
                         <Route
                             path="/admin/products"
                             element={<AdminProducts />}

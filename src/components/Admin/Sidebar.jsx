@@ -5,11 +5,11 @@ const Sidebar = () => {
     return (
         <div className="sidebar h-100">
             <div className="d-flex flex-column">
-                {/* <Link to="/admin/allorders" style={{ textDecoration: 'none' }}>
+                <Link to="/admin/orders" style={{ textDecoration: 'none' }}>
                     <div className="admin-side-text border-bottom p-3 mx-auto text-center">
                         إدارة الطلبات
                     </div>
-                </Link> */}
+                </Link>
                 <Link to="/admin/products" style={{ textDecoration: 'none' }}>
                     <div className="admin-side-text border-bottom p-3 mx-auto text-center">
                         إدارة المنتجات
