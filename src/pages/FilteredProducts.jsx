@@ -18,7 +18,7 @@ const FilteredProducts = () => {
                             <SidebarFilters />
                         </Col>
                         <Col md={10}>
-                            <Row>
+                            <Row className="mb-2">
                                 <ProductsContainer />
                                 <ProductsContainer />
                             </Row>

@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const Sidebar = () => {
     return (
-        <div className="sidebar">
+        <div className="sidebar h-100">
             <div className="d-flex flex-column">
                 {/* <Link to="/admin/allorders" style={{ textDecoration: 'none' }}>
                     <div className="admin-side-text border-bottom p-3 mx-auto text-center">
