@@ -8,7 +8,7 @@ import brand2 from '../assets/images/brand2.png';
 import brand3 from '../assets/images/brand3.png';
 import Pagination from '../components/Pagination';
 
-const AllCategories = () => {
+const Brands = () => {
     return (
         <Container
             className="page d-flex flex-column justify-content-between"
@@ -36,4 +36,4 @@ const AllCategories = () => {
     );
 };
 
-export default AllCategories;
+export default Brands;

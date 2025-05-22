@@ -4,7 +4,7 @@ import { Container, Row } from 'react-bootstrap';
 import Pagination from '../components/Pagination';
 import CategoriesContainer from '../containers/CategoriesContainer';
 
-const AllCategories = () => {
+const Categories = () => {
     return (
         <Container
             className="page d-flex flex-column justify-content-between"
@@ -22,4 +22,4 @@ const AllCategories = () => {
     );
 };
 
-export default AllCategories;
+export default Categories;

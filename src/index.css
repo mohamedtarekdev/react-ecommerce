@@ -228,7 +228,7 @@ body {
 /* end card filter */
 
 /* products details page */
-.product-gallary-card {
+.gallary-card {
     height: 470px !important;
     width: 370px;
     border-radius: 29px;
@@ -288,7 +288,6 @@ body {
     text-align: right;
 }
 .product-price {
-    height: 46px;
     width: 150px;
     text-align: center;
     padding-top: 10px;
@@ -304,7 +303,7 @@ body {
 .product-cart-add {
     cursor: pointer;
     text-align: center;
-    height: 45px;
+    padding: 6px 0;
     border-radius: 9px;
     border: none;
     background-color: #272727;
@@ -399,17 +398,7 @@ body {
 /* end auth */
 
 /* cart page */
-.cart-title {
-    color: #555550;
-    font-family: Almarai;
-    font-size: 21px;
-    font-weight: 800;
-    letter-spacing: 0;
-    line-height: 28px;
-    text-align: right;
-}
-.cart-item-body {
-    height: 229px;
+.cart {
     width: 100%;
     border-radius: 20px;
     background-color: #ffffff;
@@ -417,7 +406,7 @@ body {
 .copon-input {
     box-sizing: border-box;
     height: 46px;
-    width: 90%;
+    width: 100%;
     border: 1px solid #979797;
     font-family: 'Almarai';
     font-size: 12px;
@@ -440,40 +429,32 @@ body {
     font-weight: normal;
 }
 
-.cart-checkout {
-    height: 250px;
-    width: 100%;
-    border-radius: 20px;
-    background-color: #ffffff;
-}
-
 /* cart end */
 
 /* admin style  */
 .sidebar {
     height: 660px;
     width: 100%;
-    border-radius: 21px;
+    padding-top: 10px;
     background-color: #ffffff;
 }
 
 .admin-side-text {
     color: #272727;
     font-family: 'Almarai';
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 20px;
     text-align: right;
     width: 100%;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 .admin-side-text:hover {
     background-color: #272727;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 .page .title {
     color: #555550;

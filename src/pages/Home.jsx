@@ -12,7 +12,7 @@ const Home = () => {
             <CategoriesList
                 title="التصنيفات"
                 btnValue="المزيد"
-                path="/all-categories"
+                path="/categories"
             />
             <ProductsList
                 title="الأكثر مبيعًا"
@@ -28,7 +28,7 @@ const Home = () => {
             <BrandsList
                 title="أشهر الماركات"
                 btnValue="المزيد"
-                path="/all-brands"
+                path="/brands"
             />
         </div>
     );

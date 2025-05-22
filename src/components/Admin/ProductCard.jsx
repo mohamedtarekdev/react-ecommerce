@@ -1,23 +1,26 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 
-import favOffImg from '../assets/images/fav-off.png';
-import rate from '../assets/images/rate.png';
+import favOffImg from '../../assets/images/fav-off.png';
+import rate from '../../assets/images/rate.png';
 import { Link } from 'react-router';
 
 const ProductCard = ({ productImage }) => {
     return (
-        <Col xs="6" sm="6" md="4" lg="3" className="mt-4 d-flex">
+        <Col xs="6" sm="6" md="4" lg="4" className="mt-4 d-flex">
             <Card
                 style={{
                     width: '100%',
-                    height: '345px',
                     borderRadius: '8px',
                     border: 'none',
                     backgroundColor: '#FFFFFF',
                     boxShadow: '0 2px 2px 0 rgba(151,151,151,0.5)',
                 }}
             >
+                <Col className="d-flex justify-content-between px-3 py-2">
+                    <div className="item-delete-edit">تعديل</div>
+                    <div className="item-delete-edit">حذف</div>
+                </Col>
                 <Link to={`/product/:id`}>
                     <Card.Img
                         style={{ height: '228px', width: '100%' }}
