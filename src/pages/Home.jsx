@@ -14,11 +14,7 @@ const Home = () => {
                 btnValue="المزيد"
                 path="/categories"
             />
-            <ProductsList
-                title="الأكثر مبيعًا"
-                btnValue="المزيد"
-                path="/filtered-products"
-            />
+            <ProductsList title="Trendy Products" tag="this month" />
             <Ad />
             <ProductsList
                 title="أحدث الأزياء"
