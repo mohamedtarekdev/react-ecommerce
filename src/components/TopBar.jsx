@@ -1,0 +1,137 @@
+import React from 'react';
+
+export const TopBar = () => {
+    return (
+        <div className="header-top-area">
+            <div className="header-layout-4">
+                <div className="header-to-main d-none d-sm-flex">
+                    <div className="link-text">
+                        <span>
+                            <svg
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M13.9136 19.6698C15.769 20.6036 17.9534 21.277 20.5157 21.5651C21.1375 21.6351 21.6668 21.1368 21.6668 20.5111V18.1791C21.6668 17.682 21.3284 17.2486 20.8461 17.1281L17.9285 16.3987C17.5593 16.3064 17.1688 16.4146 16.8997 16.6837L13.9136 19.6698ZM13.9136 19.6698C10.5382 17.9711 8.2519 15.4103 6.76136 12.7386M6.76136 12.7386C5.34127 10.1933 4.6435 7.54722 4.41447 5.45C4.34797 4.84116 4.84102 4.33325 5.45347 4.33325H7.77864C8.29504 4.33325 8.73966 4.69775 8.84094 5.20412L9.63638 9.1814C9.70742 9.53658 9.59625 9.90376 9.34012 10.1599L6.76136 12.7386Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                />
+                                <path
+                                    d="M14.0337 7.68297C15.0996 7.89016 16.0786 8.41289 16.8436 9.18336C17.6088 9.95381 18.1247 10.9365 18.3243 12.0037M14.1884 3.32275C16.336 3.58645 18.335 4.55708 19.8704 6.08177C21.4057 7.60645 22.3903 9.59855 22.6689 11.7443"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </span>{' '}
+                        <a href="tel:+380961381876">+380961381876</a>
+                    </div>
+                    <div className="header-top-notice d-none d-lg-block">
+                        <p>
+                            TAKE CARE OF YOUR Health{' '}
+                            <span className="grocery-clr">25% OFF</span> USE
+                            CODE “ DOFIX03 ”
+                        </p>
+                    </div>
+                    <div className="tp-header-top-menu d-flex align-items-center justify-content-end">
+                        <div className="header-lang-item header-lang">
+                            <span
+                                className="header-lang-toggle grocery-clr-hover"
+                                id="header-lang-toggle"
+                            >
+                                English
+                            </span>
+                            <ul className="">
+                                <li>
+                                    <a className="grocery-clr-hover" href="#">
+                                        Spanish
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="grocery-clr-hover" href="#">
+                                        Russian
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="grocery-clr-hover" href="#">
+                                        Portuguese
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="header-lang-item tp-header-currency">
+                            <span
+                                className="header-currency-toggle grocery-clr-hover"
+                                id="header-currency-toggle"
+                            >
+                                USD
+                            </span>
+                            <ul>
+                                <li>
+                                    <a className="grocery-clr-hover" href="#">
+                                        EUR
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="grocery-clr-hover" href="#">
+                                        CHF
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="grocery-clr-hover" href="#">
+                                        GBP
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="grocery-clr-hover" href="#">
+                                        KWD
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="header-lang-item tp-header-setting">
+                            <span
+                                className="header-setting-toggle grocery-clr-hover"
+                                id="header-setting-toggle"
+                            >
+                                Setting
+                            </span>
+                            <ul>
+                                <li>
+                                    <a className="grocery-clr-hover" href="#">
+                                        My Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="grocery-clr-hover"
+                                        href="wishlist.html"
+                                    >
+                                        Wishlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="grocery-clr-hover"
+                                        href="cart.html"
+                                    >
+                                        Cart
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="grocery-clr-hover" href="#">
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
