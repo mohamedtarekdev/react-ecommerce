@@ -4,12 +4,14 @@ import ProductsContainer from '../containers/ProductsContainer';
 
 const ProductsList = ({ title, tag }) => {
     return (
-        <Container>
-            <SectionTitle title={title} tag={tag} />
-            <Row className="g-4">
-                <ProductsContainer />
-            </Row>
-        </Container>
+        <section class="grocery-trendy pt-100 pb-100">
+            <Container>
+                <SectionTitle title={title} tag={tag} />
+                <Row className="g-4">
+                    <ProductsContainer />
+                </Row>
+            </Container>
+        </section>
     );
 };
 
