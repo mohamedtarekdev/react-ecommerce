@@ -7,7 +7,7 @@ const ProductsList = ({ title, btnValue, path }) => {
     return (
         <Container>
             <SectionTitle title={title} btnValue={btnValue} path={path} />
-            <Row>
+            <Row className="g-4">
                 <ProductsContainer />
             </Row>
         </Container>
