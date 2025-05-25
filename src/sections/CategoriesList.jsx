@@ -1,17 +1,13 @@
-import React from 'react';
-import { Container, Row } from 'react-bootstrap';
-import SectionTitle from '../components/SectionTitle';
-
+import { Container } from 'react-bootstrap';
 import CategoriesContainer from '../containers/CategoriesContainer';
 
 const CategoriesList = ({ title, btnValue, path }) => {
     return (
-        <Container>
-            <SectionTitle title={title} btnValue={btnValue} path={path} />
-            <Row>
+        <section className="grocery-category pt-100">
+            <Container>
                 <CategoriesContainer />
-            </Row>
-        </Container>
+            </Container>
+        </section>
     );
 };
 

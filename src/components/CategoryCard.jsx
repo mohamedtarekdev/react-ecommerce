@@ -1,26 +1,17 @@
-import React from 'react';
-import { Col } from 'react-bootstrap';
-
-const CircularCard = ({ title, categoryImage, background }) => {
+const CategoryCard = ({ category }) => {
     return (
-        <Col
-            xs={6}
-            sm={6}
-            md={4}
-            lg={2}
-            className="my-4 d-flex justify-content-around"
-        >
-            <div className="all-cards d-flex flex-column align-items-center">
-                <div
-                    className="category-card d-flex justify-content-center align-items-center"
-                    style={{ backgroundColor: background }}
-                >
-                    <img src={categoryImage} alt="..." />
+        <div className="swiper-slide">
+            <div className="grocery-category__item">
+                <div className="icon">
+                    <img src={category.image} alt="icon" />
                 </div>
-                <div className="category-card-title my-2">{title}</div>
+                <h6>
+                    <a href="grocery-details.html">{category.title}</a>
+                </h6>
+                <span>{category.total} items</span>
             </div>
-        </Col>
+        </div>
     );
 };
 
-export default CircularCard;
+export default CategoryCard;

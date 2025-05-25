@@ -9,11 +9,7 @@ const Home = () => {
     return (
         <div>
             <Slider />
-            <CategoriesList
-                title="التصنيفات"
-                btnValue="المزيد"
-                path="/categories"
-            />
+            <CategoriesList />
             <ProductsList title="Trendy Products" tag="this month" />
             <Ad />
             <ProductsList
