@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -70,10 +70,14 @@ const CategoriesContainer = () => {
                     </button>
                 </div>
                 <Swiper
-                    modules={[Navigation]}
+                    modules={[Navigation, Autoplay]}
                     navigation={{
                         prevEl: '.discount-slider-button-prev',
                         nextEl: '.discount-slider-button-next',
+                    }}
+                    autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
                     }}
                     spaceBetween={20}
                     slidesPerView={5}
