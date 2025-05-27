@@ -1,8 +1,7 @@
-import React from 'react';
 import Slider from '../components/Slider';
 import CategoriesList from '../sections/CategoriesList';
 import ProductsList from '../sections/ProductsList';
-import Ad from '../components/Ad';
+import Ads from '../sections/Ads';
 import BrandsList from '../sections/BrandsList';
 
 const Home = () => {
@@ -11,7 +10,7 @@ const Home = () => {
             <Slider />
             <CategoriesList />
             <ProductsList title="Trendy Products" tag="this month" />
-            <Ad />
+            <Ads />
             <ProductsList
                 title="أحدث الأزياء"
                 btnValue="المزيد"

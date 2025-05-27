@@ -1,21 +1,29 @@
-import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-
-import laptops from '../assets/images/laptops.png';
-
-const Ads = () => {
+const Ad = ({ image, tag, title, whiteText }) => {
     return (
-        <Container>
-            <Row className="ad my-3 mx-2 d-flex text-center align-items-center">
-                <Col sm="6">
-                    <span>خصم يصل حتي ٣٠٪ علي اجهازه اللاب توب</span>
-                </Col>
-                <Col sm="6">
-                    <img className="ads-img" src={laptops} alt="" />
-                </Col>
-            </Row>
-        </Container>
+        <a
+            href="grocery-details.html"
+            className="grocery-off__item h-100 bg-image d-block"
+            style={{
+                backgroundImage: `url(${image})`,
+            }}
+        >
+            <span className="fo-discount">{tag}</span>
+            <h3
+                className={
+                    whiteText ? 'text-capitalize text-white' : 'text-capitalize'
+                }
+                style={{ whiteSpace: 'pre-line' }}
+            >
+                {title}
+            </h3>
+            <div className="solid-btn mt-30">
+                Buy Now
+                <span>
+                    <i className="fa-regular fa-angle-right"></i>
+                </span>
+            </div>
+        </a>
     );
 };
 
-export default Ads;
+export default Ad;
