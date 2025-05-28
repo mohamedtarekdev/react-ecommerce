@@ -3,6 +3,7 @@ import CategoriesList from '../sections/CategoriesList';
 import ProductsList from '../sections/ProductsList';
 import Ads from '../sections/Ads';
 import BrandsList from '../sections/BrandsList';
+import MiniProductGrid from '../sections/MiniProductsGrid';
 
 const Home = () => {
     return (
@@ -11,11 +12,7 @@ const Home = () => {
             <CategoriesList />
             <ProductsList title="Trendy Products" tag="this month" />
             <Ads />
-            <ProductsList
-                title="أحدث الأزياء"
-                btnValue="المزيد"
-                path="/filtered-products"
-            />
+            <MiniProductGrid title="Best Sellers" tag="this week" />
             <BrandsList
                 title="أشهر الماركات"
                 btnValue="المزيد"
