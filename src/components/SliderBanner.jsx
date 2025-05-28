@@ -1,7 +1,7 @@
 import descountTag from '../assets/imgs/grocery/banner/discount-tag.png';
 const SliderBanner = ({ banner }) => {
     return (
-        <div class="swiper-slide">
+        <div className="swiper-slide">
             <div className="banner-item-4 d-flex align-items-center">
                 <div className="container">
                     <div className="row g-5 align-self-center">
