@@ -7,19 +7,21 @@ import brand1 from '../assets/images/brand1.png';
 import brand2 from '../assets/images/brand2.png';
 import brand3 from '../assets/images/brand3.png';
 
-const BrandsList = ({ title, btnValue, path }) => {
+const BrandsList = ({ title, tag }) => {
     return (
-        <Container>
-            <SectionTitle title={title} btnValue={btnValue} path={path} />
-            <Row>
-                <BrandCard brandImage={brand1} />
-                <BrandCard brandImage={brand2} />
-                <BrandCard brandImage={brand3} />
-                <BrandCard brandImage={brand1} />
-                <BrandCard brandImage={brand2} />
-                <BrandCard brandImage={brand3} />
-            </Row>
-        </Container>
+        <section class="discount-area p-relative section-space">
+            <Container>
+                <SectionTitle title={title} tag={tag} />
+                <Row>
+                    <BrandCard brandImage={brand1} />
+                    <BrandCard brandImage={brand2} />
+                    <BrandCard brandImage={brand3} />
+                    <BrandCard brandImage={brand1} />
+                    <BrandCard brandImage={brand2} />
+                    <BrandCard brandImage={brand3} />
+                </Row>
+            </Container>
+        </section>
     );
 };
 
