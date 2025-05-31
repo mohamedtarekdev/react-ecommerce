@@ -1,31 +1,14 @@
-import React from 'react';
-import { Card, Col } from 'react-bootstrap';
-
-const BrandCard = ({ brandImage }) => {
+const BrandCard = ({ banner }) => {
     return (
-        <Col
-            xs="6"
-            sm="6"
-            md="4"
-            lg="2"
-            className="my-2 d-flex justify-content-center"
-        >
-            <Card
-                className="my-1"
-                style={{
-                    width: '100%',
-                    height: '150px',
-                    borderRadius: '8px',
-                    border: 'none',
-                    backgroundColor: '#FFFFFF',
-                }}
-            >
-                <Card.Img
-                    style={{ width: '100%', height: '151px' }}
-                    src={brandImage}
-                />
-            </Card>
-        </Col>
+        <div className="swiper-slide">
+            <div className="product-item grocery__product">
+                <div className="product-thumb theme-bg-2">
+                    <a href="grocery-details.html">
+                        <img src={banner.image} alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
     );
 };
 

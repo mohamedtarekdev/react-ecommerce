@@ -13,7 +13,7 @@ const Home = () => {
             <ProductsList title="Trendy Products" tag="this month" />
             <Ads />
             <MiniProductGrid title="Best Sellers" tag="this week" />
-            <BrandsList title="Most Famous Brands" tag="our partners" />
+            {/* <BrandsList title="Most Famous Brands" tag="our partners" /> */}
         </div>
     );
 };

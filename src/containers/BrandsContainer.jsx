@@ -1,90 +1,54 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 import BrandCard from '../components/BrandCard';
 
-import product1 from '../assets/imgs/grocery/product/product1.png';
-import product2 from '../assets/imgs/grocery/product/product2.png';
-import product3 from '../assets/imgs/grocery/product/product3.png';
-import product4 from '../assets/imgs/grocery/product/product4.png';
-import product5 from '../assets/imgs/grocery/product/product5.png';
-import product6 from '../assets/imgs/grocery/product/product6.png';
-import product7 from '../assets/imgs/grocery/product/product7.png';
-import product8 from '../assets/imgs/grocery/product/product8.png';
+import brand1 from '../assets/imgs/grocery/brand/brand-01.png';
+import brand2 from '../assets/imgs/grocery/brand/brand-02.png';
+import brand3 from '../assets/imgs/grocery/brand/brand-03.png';
+import brand4 from '../assets/imgs/grocery/brand/brand-04.png';
+import brand5 from '../assets/imgs/grocery/brand/brand-05.png';
 
 const BrandsContainer = () => {
-    const prodcuts = [
-        {
-            id: 1,
-            image: product1,
-            price: '150.00',
-            title: 'Organic Avocado',
-            tag: '10% Off',
-        },
-        {
-            id: 2,
-            image: product2,
-            price: '190.00',
-            title: 'Cheddar Fries',
-        },
-        {
-            id: 3,
-            image: product3,
-            price: '300.00',
-            title: 'Broccoli Organic',
-            tag: '15% Off',
-        },
-        {
-            id: 4,
-            image: product4,
-            price: '129.00',
-            title: 'Broccoli Farms',
-        },
-        {
-            id: 5,
-            image: product5,
-            price: '150.00',
-            title: 'Fresh Orange',
-            tag: '10% Off',
-        },
-        {
-            id: 6,
-            image: product6,
-            price: '150.00',
-            title: 'Organic Avocado',
-        },
-        {
-            id: 7,
-            image: product7,
-            price: '80.00',
-            title: 'Fresh Orange',
-            tag: 'NEW',
-        },
-        {
-            id: 8,
-            image: product8,
-            price: '49.00',
-            title: 'Red Apple',
-        },
+    const banners = [
+        { id: 1, image: brand1 },
+        { id: 2, image: brand2 },
+        { id: 3, image: brand3 },
+        { id: 4, image: brand4 },
+        { id: 5, image: brand5 },
     ];
 
     return (
-        <>
-            <div class="discount-main p-relative">
-                <div class="discount-slider-navigation grocery__navigation">
-                    <button type="button" class="discount-slider-button-prev">
-                        <i class="fa-regular fa-angle-left"></i>
-                    </button>
-                    <button type="button" class="discount-slider-button-next">
-                        <i class="fa-regular fa-angle-right"></i>
-                    </button>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-xxl-12">
-                        <div class="swiper furuniture-active">
-                            <div class="swiper-wrapper"></div>
-                        </div>
-                    </div>
-                </div>
+        <div className="discount-main p-relative">
+            <div className="discount-slider-navigation grocery__navigation">
+                <button type="button" className="discount-slider-button-prev">
+                    <i className="fa-regular fa-angle-left"></i>
+                </button>
+                <button type="button" className="discount-slider-button-next">
+                    <i className="fa-regular fa-angle-right"></i>
+                </button>
             </div>
-        </>
+
+            <Swiper
+                modules={[Navigation]}
+                navigation={{
+                    nextEl: '.discount-slider-button-next',
+                    prevEl: '.discount-slider-button-prev',
+                }}
+                spaceBetween={20}
+                slidesPerView={3}
+                loop={true}
+                className="furuniture-active"
+            >
+                {banners.map((banner) => (
+                    <SwiperSlide key={banner.id}>
+                        <BrandCard banner={banner} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
     );
 };
 
